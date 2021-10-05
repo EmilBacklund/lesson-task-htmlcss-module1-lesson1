@@ -1,77 +1,119 @@
 body,
 html {
-  background-color: #0d0d0d;
-  color: white;
-  font-family: sans-serif;
+  background-color: gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header span {
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 10px;
+.my-header {
+  display: block;
+  background-color: #202020;
+  height: 60px;
 }
 
 .my-header .logo {
   display: inline-block;
-  background-color: #0d0d0d;
-  color: white;
+  color: #fff;
+  font-weight: 800;
+  font-size: 36px;
 }
 
-.hero-banner {
-  background-color: #0d0d0d;
-  background-image: url(/images/guitar-1.png);
-  height: 420px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #0d0d0d;
-}
-
-.navigation ul {
-  margin: 0;
-  padding: 0;
-}
-
-.navigation ul li a {
-  background-color: #0d0d0d;
-  text-decoration: none;
-  transition-duration: 0.8s;
-  color: white;
-}
-
-.navigation ul li {
+.navigation {
   display: inline-block;
-  margin-right: 30px;
-}
-
-.links:hover {
-  background-color: red;
+  background-color: transparent;
 }
 
 .navigation ul {
   list-style: none;
 }
 
-/*
-Margin: 0 0 0 0
-TOP RIGHT BOTTOM LEFT
-*/
+.navigation ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation > a {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px dotted black;
+}
+
+.hero-banner {
+  background-color: cyan;
+  background-image: url("/images/guitar-1.png");
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .inner {
   width: 1080px;
   margin: 0 auto;
 }
 
-.inner2 {
-  background-size: 420px;
+.links {
+  transition-duration: 0.5s;
 }
 
-footer {
+.links:hover {
+  color: red;
+}
+
+.links:active {
+  color: black;
+}
+
+.footer {
+  color: #fff;
+  background-color: #202020;
+  height: 140px;
+}
+
+/*ID has the highest specificity level, it always win*/
+#guitar-page {
   background-color: gray;
-  color: #0d0d0d;
 }
 
-h1 {
-  font-size: 60px;
+#guitar-page h1 {
+  color: black;
+}
+
+#about-page {
+  background-color: gray;
+}
+
+.flexbox-container {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexitem {
+  width: 1080px;
+  margin: 10px;
+}
+
+.guitarPicture {
+  min-height: 300px;
+}
+
+.viewguitar {
+  min-height: 100px;
+}
+
+#view-guitar {
+  background-color: grey;
+}
+
+.money {
+  font-size: 36px;
+  font-weight: bold;
 }
